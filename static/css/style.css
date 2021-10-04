@@ -1,0 +1,31 @@
+body{
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+}
+.bold-font{
+    font-family: 'Jost', sans-serif;
+}
+#features{
+    text-align: center;
+    background-color: #406343;
+    color: #F3EFCC;
+    padding: 30px 150px;
+}
+
+.features-icon, p-features{
+    font-size: 80px;
+    padding: 20px 0;
+}
+
+#notes{
+    text-align: center;
+    background-color: #ECE7B4;
+    color: #406343;
+    padding: 30px 150px;
+}
+.content{
+    padding: 15px 0;
+}
+.empty-button{
+    margin-top: 20px;
+}

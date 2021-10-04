@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- fontawesome script -->
+    <script src="https://kit.fontawesome.com/419ac82388.js" crossorigin="anonymous"></script>
+    <title>My notes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@900&family=Spartan&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
+  </head>
+  <body>
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+              <a class="navbar-brand" href="#"><i class="far fa-bookmark"></i> my notes</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Notes</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </section>
+    <section id="features">
+        <h1 class="bold-font">Features</h1>
+        <div class="row">
+            <div class="col-lg-4">
+                <i class="fas fa-angle-double-up features-icon"></i>
+                <p class="p-features">Better UI</p>
+            </div>
+            <div class="col-lg-4">
+                <i class="fas fa-check-circle features-icon"></i>
+                <p class="p-features">Good UX</p>
+            </div>
+            <div class="col-lg-4">
+                <i class="fas fa-cloud features-icon"></i>
+                <p class="p-features">Save in cloud</p>
+            </div>
+        </div>
+    </section>
+    <section id="notes">
+        <h1 class="bold-font">Notes</h1>
+        <div class="content">
+            {% if notes == [] %}
+            <h3>Still empty...</h3>
+            <a class="btn empty-button" style="background-color: #406343; color: #F3EFCC;" href="#">Add new note</a>
+        {% endif %}
+        </div>
+        
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  </body>
+</html>
